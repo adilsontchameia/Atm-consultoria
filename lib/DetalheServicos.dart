@@ -10,7 +10,7 @@ class _DetalheServicosState extends State<DetalheServicos> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Detalhes das Empresas"),
+        title: Text("Servicos"),
         backgroundColor: Colors.green,
       ),
       body: SingleChildScrollView(
@@ -20,9 +20,9 @@ class _DetalheServicosState extends State<DetalheServicos> {
             children: [
               Row(
                 children: [
-                  Image.asset("images/detalhe_empresa.png"),
+                  Image.asset("images/detalhe_servico.png"),
                   Text(
-                    ("Sobre a Empresa"),
+                    ("Nossos Servicos"),
                     style: TextStyle(
                         fontSize: 20,
                         color: Colors.deepOrange,
