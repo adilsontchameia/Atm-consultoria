@@ -1,3 +1,7 @@
+import 'package:atm_consultoria/DetalheClientes.dart';
+import 'package:atm_consultoria/DetalheContato.dart';
+import 'package:atm_consultoria/DetalheEmpresa.dart';
+import 'package:atm_consultoria/DetalheServicos.dart';
 import 'package:flutter/material.dart';
 
 class TelaPrincipal extends StatefulWidget {
@@ -6,8 +10,22 @@ class TelaPrincipal extends StatefulWidget {
 }
 
 class _TelaPrincipalState extends State<TelaPrincipal> {
+  //Metodos para abrir as telas
   void _abrirEmpresa() {
-    //Abrir outra tela
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => DetalheEmpresa()));
+  }
+    void _abrirServicos() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => DetalheServicos()));
+  }
+    void _abrirCliente() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => DetalheCliente()));
+  }
+    void _abrirContato() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => DetalheContato()));
   }
 
   @override
