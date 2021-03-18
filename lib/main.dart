@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: TelaPrincipal(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
@@ -16,15 +17,25 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Atm Consultoria"),
+          title: Text("ATM CONSULTORIA"),
           backgroundColor: Colors.green,
         ),
         body: Container(
-          padding: EdgeInsets.only(top: 110, left: 50, right: 50),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset("images/logo.png"),
+              Padding(
+                padding: EdgeInsets.only(top: 90, bottom: 20),
+                child: Image.asset("images/logo.png"),
+              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Image.asset("images/menu_empresa.png"),
+                    Image.asset("images/menu_empresa.png"),
+                  ],
+                ),
+              )
             ],
           ),
         ));
