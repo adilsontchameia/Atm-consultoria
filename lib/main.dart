@@ -42,7 +42,8 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Image.asset("images/menu_cliente.png"),
+                    Image.asset(
+                      "images/menu_cliente.png"),
                     Image.asset("images/menu_contato.png"),
                   ],
                 ),
