@@ -15,10 +15,18 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Atm Consultoria"),
-        backgroundColor: Colors.redAccent,
-      ),
-    );
+        appBar: AppBar(
+          title: Text("Atm Consultoria"),
+          backgroundColor: Colors.green,
+        ),
+        body: Container(
+          padding: EdgeInsets.only(top: 110, left: 50, right: 50),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset("images/logo.png"),
+            ],
+          ),
+        ));
   }
 }
