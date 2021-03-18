@@ -15,15 +15,18 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => DetalheEmpresa()));
   }
-    void _abrirServicos() {
+
+  void _abrirServicos() {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => DetalheServicos()));
   }
-    void _abrirCliente() {
+
+  void _abrirCliente() {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => DetalheCliente()));
   }
-    void _abrirContato() {
+
+  void _abrirContato() {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => DetalheContato()));
   }
@@ -54,7 +57,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     child: Image.asset("images/menu_empresa.png"),
                   ),
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirServicos,
                     child: Image.asset("images/menu_servico.png"),
                   ),
                 ],
@@ -66,11 +69,11 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirCliente,
                     child: Image.asset("images/menu_cliente.png"),
                   ),
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirContato,
                     child: Image.asset("images/menu_contato.png"),
                   ),
                 ],
