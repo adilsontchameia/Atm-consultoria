@@ -17,7 +17,7 @@ class _DetalheClienteState extends State<DetalheCliente> {
         child: Container(
           padding: EdgeInsets.all(16),
           child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
