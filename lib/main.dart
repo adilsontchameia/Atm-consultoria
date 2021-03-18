@@ -24,8 +24,18 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           child: Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 90, bottom: 20),
+                padding: EdgeInsets.only(top: 100, bottom: 20),
                 child: Image.asset("images/logo.png"),
+              ),
+              Container(
+                 padding: EdgeInsets.only(bottom: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Image.asset("images/menu_empresa.png"),
+                    Image.asset("images/menu_empresa.png"),
+                  ],
+                ),
               ),
               Container(
                 child: Row(
