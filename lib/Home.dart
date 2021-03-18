@@ -6,43 +6,61 @@ class TelaPrincipal extends StatefulWidget {
 }
 
 class _TelaPrincipalState extends State<TelaPrincipal> {
+  void _abrirEmpresa() {
+    //Abrir outra tela
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: Text("ATM CONSULTORIA"),
-          backgroundColor: Colors.green,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text("ATM CONSULTORIA"),
+        backgroundColor: Colors.green,
+      ),
+      body: Container(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          //
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("images/logo.png"),
+            Padding(
+              padding: EdgeInsets.only(top: 32),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  GestureDetector(
+                    onTap: _abrirEmpresa,
+                    child: Image.asset("images/menu_empresa.png"),
+                  ),
+                  GestureDetector(
+                    onTap: _abrirEmpresa,
+                    child: Image.asset("images/menu_servico.png"),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 32),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  GestureDetector(
+                    onTap: _abrirEmpresa,
+                    child: Image.asset("images/menu_cliente.png"),
+                  ),
+                  GestureDetector(
+                    onTap: _abrirEmpresa,
+                    child: Image.asset("images/menu_contato.png"),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
-        body: Container(
-            child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Padding(
-                padding: EdgeInsets.only(top: 100, bottom: 30),
-                child: Image.asset("images/logo.png"),
-              ),
-              Container(
-                padding: EdgeInsets.only(bottom: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Image.asset("images/menu_empresa.png"),
-                    Image.asset("images/menu_servico.png"),
-                  ],
-                ),
-              ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Image.asset("images/menu_cliente.png"),
-                    Image.asset("images/menu_contato.png"),
-                  ],
-                ),
-              )
-            ],
-          ),
-        )));
+      ),
+    );
   }
 }
